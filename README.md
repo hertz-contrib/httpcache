@@ -20,7 +20,7 @@ import (
 	"net/http"
 
 	// ...
-	httpcache "github.com/hertz-contrib/httpcache"
+	httpcache "github.com/hertz-contrib/httpcache/server"
 )
 
 func main() {

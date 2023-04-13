@@ -1,10 +1,10 @@
-module github.com/hertz-contrib/httpcache
+module github.com/hertz-contrib/httpcache/server
 
-go 1.19
+go 1.17
 
 require (
-	github.com/cloudwego/hertz v0.6.1
-	github.com/darkweak/souin v1.6.36
+	github.com/cloudwego/hertz v0.6.2
+	github.com/darkweak/souin v1.6.37
 )
 
 require (

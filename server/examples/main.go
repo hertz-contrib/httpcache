@@ -6,10 +6,11 @@ import (
 
 	"github.com/cloudwego/hertz/pkg/app"
 	"github.com/cloudwego/hertz/pkg/app/server"
-	"github.com/hertz-contrib/httpcache"
+	httpcache "github.com/hertz-contrib/httpcache/server"
 )
 
 func main() {
+	// Server example
 	h := server.Default(server.WithHostPorts(":80"))
 
 	h.Use(httpcache.NewHTTPCache(httpcache.DevDefaultConfiguration))
