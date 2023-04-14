@@ -29,9 +29,9 @@ func main() {
 	// ...
 }
 ```
-With that your application will be able to cache the responses if possible and returns at least the `Cache-Status` HTTP header with the different directives mentionned in the RFC specification.  
+With that your application will be able to cache the responses if possible and returns at least the `Cache-Status` HTTP header with the different directives mentioned in the RFC specification.  
 You have to pass a Hertz `Configuration` structure into the `NewHTTPCache` method (you can use the `DefaultConfiguration` variable to have a built-in production ready configuration).  
-See the full detailled configuration names [here](https://github.com/darkweak/souin#optional-configuration).
+See the full detailed configuration names [here](https://github.com/darkweak/souin#optional-configuration).
 
 Other resources
 ---------------

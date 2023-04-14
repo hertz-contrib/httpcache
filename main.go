@@ -13,26 +13,4 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package main
-
-import (
-	"context"
-	"net/http"
-
-	"github.com/cloudwego/hertz/pkg/app"
-	"github.com/cloudwego/hertz/pkg/app/server"
-	httpcache "github.com/hertz-contrib/httpcache/server"
-)
-
-func main() {
-	// Server example
-	h := server.Default(server.WithHostPorts(":80"))
-
-	h.Use(httpcache.NewHTTPCache(httpcache.DevDefaultConfiguration))
-
-	h.GET("/*path", func(c context.Context, ctx *app.RequestContext) {
-		ctx.String(http.StatusOK, "Hello Hertz!")
-	})
-
-	h.Spin()
-}
+package httpcache
